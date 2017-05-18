@@ -5,6 +5,7 @@ public class People extends Block{
 	int x;
 	int y;
 	int logo;
+	int direction;
 	double viewInCome[][]=new double[data.M][data.M];
 	People(int x,int y,int logo){
 		super(x,y,logo);
@@ -14,6 +15,16 @@ public class People extends Block{
 	}
 	
 	
+	public int getDirection() {
+		return direction;
+	}
+
+
+	public void setDirection(int direction) {
+		this.direction = direction;
+	}
+
+
 	public double[][] getViewInCome() {
 		return viewInCome;
 	}
@@ -83,8 +94,8 @@ public class People extends Block{
 		default:
 			break;
 		}
-//		setX(x);
-//		setY(y);
+		setX(x);
+		setY(y);
 		//System.out.println(x+"--"+y);
 	}
 	
